@@ -1,0 +1,783 @@
+@charset "utf-8";
+@import url(base.css);
+
+body {
+ font-size: large;
+ line-height: 1em;
+}
+
+/*PC*/
+
+/*header*/
+
+header {
+ width: 100%;
+ position: relative;
+ z-index: 10
+}
+
+header.inner {
+ width: 1100px;
+ margin: auto;
+ height: 120px;
+ line-height: 120px;
+
+ position: relative
+}
+
+header #logo {
+ height: 60px;
+ text-align: center;
+ padding-top: 10px;
+}
+
+header .ham {
+ display: none
+}
+
+header #gnb .menu {
+ width: 600px;
+ height: 50px;
+ line-height: 50px;
+ margin: auto;
+}
+
+header #gnb a {
+ display: block;
+ float: left;
+ width: 150px;
+ margin: auto;
+ height: 40px;
+ line-height: 40px;
+ text-align: center;
+ color: #222
+}
+
+header #gnb a:hover {
+ font-weight: bold
+}
+
+header #gnbHam {
+ display: none
+}
+
+/*sub*/
+
+.sub {
+ position: absolute;
+ width: 600px;
+ background: #fff;
+
+ top: -500px;
+ opacity: 0
+}
+
+.sub .subMenu {
+ position: relative
+}
+
+.sub ul {
+ width: 150px;
+ text-align: center;
+ float: left;
+}
+
+header .sub li a {
+ font-size: 0.9em;
+}
+
+header #gnb .menu + .sub {
+ opacity: 0;
+ top: 110px;
+ margin: auto;
+ position: absolute;
+ width: 100%;
+ background: rgba(255, 255, 255, 0.9);
+}
+
+header #gnb .menu:hover + .sub,
+header #gnb .menu + .sub:hover {
+ opacity: 1
+}
+
+.sub .subMenu {
+ position: relative;
+ width: 600px;
+ margin: auto;
+}
+
+
+/*figure*/
+
+figure {
+ width: 1100px;
+ height: 637px;
+ margin: 0 auto;
+
+ position: relative
+}
+
+figure img {}
+
+figure:hover {}
+
+#banner {
+ width: 1100px;
+ height: 637px;
+ background: url(../img/main_banner.jpg) no-repeat;
+ z-index: 3
+}
+
+figure .box {
+ width: 50%;
+ height: 100%;
+ background: rgba(34, 34, 34, 0.8);
+ position: absolute;
+
+ bottom: 0;
+ right: 0;
+}
+
+figure .inner {
+ position: absolute;
+ color: #fff;
+ top: 70px;
+ right: 25px;
+ font-size: 50px;
+}
+
+figure .text h4 {
+ position: absolute;
+ color: #fff;
+ top: 140px;
+ right: 25px;
+ font-family: "Do Hyeon";
+ letter-spacing: 0.05em;
+ font-size: 60px;
+}
+
+figure .text .p1 {
+ position: absolute;
+ color: #fff;
+ top: 250px;
+ right: 25px;
+ font-size: 30px;
+}
+
+figure .text .p2 {
+ position: absolute;
+ color: #fff;
+ top: 290px;
+ right: 25px;
+ font-size: 30px;
+}
+
+figure .text .p3 {
+ position: absolute;
+ color: #fff;
+ top: 330px;
+ right: 25px;
+ font-size: 30px;
+}
+
+figure .text a {
+ position: absolute;
+ color: #fff;
+ top: 450px;
+ right: 25px;
+ font-size: 18px;
+}
+
+@keyframes plz {
+ from {
+  width: 30%;
+ }
+ to {
+  width: 50%
+ }
+}
+
+
+/*article*/
+
+main .a1 {
+ width: 1100px;
+ margin: auto;
+}
+
+main .a1 img {
+ float: left;
+ margin-top: -2px;
+}
+
+main .a2 {
+ width: 1100px;
+ margin: auto;
+ position: relative
+}
+
+main .a2 img {
+ float: left;
+ /* opacity: 0.9*/
+}
+
+main .a2 p {
+ position: absolute;
+ font-size: 1.7em;
+ font-weight: bold
+}
+
+main .a2 .p1 {
+ top: 470px;
+ left: 150px;
+}
+
+main .a2 .p2 {
+ top: 470px;
+ right: 120px;
+}
+
+main .m1 {
+ display: none;
+}
+
+/*footer*/
+
+footer {
+ width: 1100px;
+ margin: auto;
+
+}
+
+footer #sns {
+ float: right;
+}
+
+footer #sns a {
+ display: inline-block;
+ /* float: left;*/
+}
+
+footer address a:hover {
+ color: #0af
+}
+
+footer #sns i {
+ font-size: 25px;
+ color: #666;
+ padding: 50px 10px;
+}
+
+footer #sns i:hover {
+ color: #333
+}
+
+footer address {
+ display: block;
+ font-size: 0.8em;
+ font-style: normal;
+ float: left;
+ padding: 55px 0
+}
+
+footer adderss a:hover {
+ color: #0af
+}
+
+.wrap {
+ position: fixed;
+
+ width: 100%;
+ height: 100%;
+ background: rgba(51, 51, 51, 0.3);
+
+ top: 0;
+ left: 0;
+ z-index: 5;
+
+ display: none
+}
+
+
+
+
+/*모바일*/
+
+@media screen and (max-width:499px) {
+
+ header {
+  width: 100%;
+  height: 65px
+ }
+
+ header #logo img {
+  height: 40px
+ }
+
+ header .ham {
+  display: block;
+  font-size: 1.3em;
+
+  position: absolute;
+  top: 35%;
+  left: 6%;
+
+  z-index: 20
+ }
+
+ header #gnb {
+  display: none
+ }
+
+ header #gnbHam {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: #333;
+  color: #fff;
+
+  position: fixed;
+  top: 0;
+ }
+
+ header #gnbHam .logoHam {
+  font-family: "Do Hyeon";
+  text-align: center;
+  letter-spacing: 1;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 15px;
+ }
+
+ header #gnbHam dt {
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.9)
+ }
+
+
+ header #gnbHam dt a {
+  display: block;
+
+  font-size: 18px;
+  margin: 15px 0px;
+  padding: 0 20px;
+ }
+
+ header #gnbHam dt a:hover {
+  color: #edd035
+ }
+
+ header dd {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.6)
+ }
+
+ header #gnbHam dd a:hover {
+  color: rgba(237, 208, 53, 0.7)
+ }
+
+ header #gnbHam .address {
+  margin-left: 5%;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1;
+
+  position: absolute;
+  bottom: 20%;
+ }
+
+ header #gnbHam .copy {
+  margin-left: 5%;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1;
+
+  position: absolute;
+  bottom: 15%
+ }
+
+ figure {
+  width: 100%;
+  margin: auto
+ }
+ #banner {
+  width: 94%;
+  height: 610px;
+  background: url(../img/m_banner_final.png) no-repeat;
+  /*  overflow: hidden;*/
+  /*  background-size: 100%;*/
+ }
+
+ figure .box {
+
+  width: 100%;
+  height: 115px;
+  background: rgba(34, 34, 34, 0.8);
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+ }
+
+
+ figure .inner {
+  position: absolute;
+  color: #fff;
+  top: 25%;
+  right: 75%;
+  font-size: 35px;
+ }
+
+ figure .text h4 {
+  position: absolute;
+  color: #fff;
+  top: 20%;
+  right: 25%;
+  font-family: "Do Hyeon";
+  letter-spacing: 0.05em;
+  font-size: 40px;
+ }
+
+ figure .text .p1,
+ figure .text .p2,
+ figure .text .p3 {
+  display: none;
+
+ }
+
+ figure .text a {
+  position: absolute;
+  color: #fff;
+  top: 70%;
+  right: 21%;
+  font-size: 15px;
+ }
+
+ main .a1 {
+  display: none
+ }
+
+ main .m1 {
+  display: block;
+  padding-top: 20px;
+  width: 100%
+ }
+
+ main .m1 img {
+  width: 100%;
+ }
+
+ main .m1 h3 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Do hyeon';
+  font-size: 25px
+ }
+
+ main .m1 p {
+  text-align: center;
+  padding-bottom: 30px;
+  letter-spacing: 1
+ }
+
+ main .a2 {
+  width: 100%
+ }
+
+ main .a2 img {
+  width: 50%
+ }
+
+ main .a2 p {
+  position: absolute;
+  font-size: 18px
+ }
+
+ main .a2 .p1 {
+  top: 65px;
+  left: 25px;
+ }
+
+ main .a2 .p2 {
+  top: 65px;
+  right: 0;
+ }
+
+ footer {
+  width: 100%
+ }
+
+ footer #sns {
+  width: 100%;
+  text-align: center;
+ }
+
+ footer #sns i {
+  padding: 30px 5px 60px;
+ }
+
+ footer address {
+  display: none
+ }
+
+ .wrap {
+  display: block
+ }
+
+
+}
+
+
+/*타블렛*/
+
+@media screen and (min-width: 500px) and (max-width:1020px) {
+
+ header {
+  width: 100%;
+  height: 65px
+ }
+
+ header #logo img {
+  height: 40px
+ }
+
+ header .ham {
+  display: block;
+  font-size: 1.7em;
+
+  position: absolute;
+  top: 35%;
+  left: 6%;
+ }
+ 
+  header #gnbHam {
+  display: block;
+  width: 35%;
+  height: 100%;
+  background: #333;
+  color: #fff;
+
+  position: fixed;
+  top: 0;
+ }
+
+ header #gnbHam .logoHam {
+  font-family: "Do Hyeon";
+  text-align: center;
+  letter-spacing: 1;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 15px;
+ }
+
+ header #gnbHam dt {
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.9)
+ }
+
+
+ header #gnbHam dt a {
+  display: block;
+
+  font-size: 18px;
+  margin: 15px 0px;
+  padding: 0 20px;
+ }
+
+ header #gnbHam dt a:hover {
+  color: #edd035
+ }
+
+ header dd {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.6)
+ }
+
+ header #gnbHam dd a:hover {
+  color: rgba(237, 208, 53, 0.7)
+ }
+
+ header #gnbHam .address {
+  margin-left: 5%;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1;
+
+  position: absolute;
+  bottom: 20%;
+ }
+
+ header #gnbHam .copy {
+  margin-left: 5%;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1;
+
+  position: absolute;
+  bottom: 15%
+ }
+
+ header #gnb {
+  display: none;
+ }
+
+ figure {
+  width: 100%;
+
+  position: relative
+ }
+
+ #banner {
+  width: 100%;
+  background: url(../img/t_banner_final.png) no-repeat;
+  /* background-size: 100%;*/
+  height: 420px;
+  overflow: hidden;
+ }
+
+ figure .box {
+  width: 50%;
+  background: rgba(34, 34, 34, 0.8);
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+ }
+
+ figure .inner {
+  color: #fff;
+  top: 50px;
+  right: 25px;
+  font-size: 40px;
+ }
+
+ figure .text h4 {
+  position: absolute;
+  color: #fff;
+  top: 110px;
+  right: 25px;
+  font-family: "Do Hyeon";
+  letter-spacing: 0.05em;
+  font-size: 45px;
+ }
+
+ figure .text .p1 {
+  position: absolute;
+  color: #fff;
+  top: 220px;
+  right: 25px;
+  font-size: 23px;
+ }
+
+ figure .text .p2 {
+  position: absolute;
+  color: #fff;
+  top: 250px;
+  right: 25px;
+  font-size: 23px;
+ }
+
+ figure .text .p3 {
+  position: absolute;
+  color: #fff;
+  top: 280px;
+  right: 25px;
+  font-size: 23px;
+ }
+
+ figure .text a {
+  position: absolute;
+  color: #fff;
+  top: 360px;
+  right: 25px;
+  font-size: 17px;
+ }
+
+
+ main .a1 {
+  display: none
+ }
+ main .m1 {
+  display: inline-block;
+  width: 100%
+ }
+ /*
+ main .m1 img {
+  width: 50%;
+ }
+*/
+ main .m1 .inner1,
+ main .m1 .inner2 {
+  width: 50%;
+  float: left;
+  overflow: hidden
+ }
+
+ main .m1 img {
+  height: 250px;
+ }
+
+
+
+ main .m1 h3 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Do hyeon';
+  font-size: 25px
+ }
+ main .m1 p {
+  text-align: center;
+  padding-bottom: 30px;
+  letter-spacing: 1
+ }
+ main .a2 {
+  width: 100%
+ }
+ main .a2 img {
+  width: 50%
+ }
+ main .a2 p {
+  position: absolute;
+  font-size: 25px
+ }
+ main .a2 .p1 {
+  top: 150px;
+  left: 14%;
+ }
+ main .a2 .p2 {
+  top: 150px;
+  right: 9%;
+ }
+
+ footer {
+  width: 100%
+ }
+
+ footer #sns {
+  width: 100%;
+  text-align: center;
+ }
+
+ footer #sns i {
+  padding: 30px 5px 60px;
+ }
+
+ footer address {
+  display: none
+ }
+}
+
+
+
+
+
+body {
+/* overflow-x: hidden*/
+}
+
+
+
+/*jQuery용 css*/
