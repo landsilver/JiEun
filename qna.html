@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compitable" content="IE=Edge">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <title>Dobbi QnA</title>
+ <link rel="stylesheet" href="css/qna.css">
+ <script src="js/jquery-1.12.4.min.js"></script>
+ <script src="js/jquery-ui.min.js"></script>
+ <script src="js/layout.js"></script>
+ <!--[if lt IE 9]>
+ <script src="js/ie9.min.js"></script>
+ <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+ <!-- header-->
+
+ <header>
+  <h1 id="logo">
+   <div class="inner">
+    <a href="index.html">Dobbi</a>
+   </div>
+  </h1>
+
+  <div class="ham">
+   <a href="#"><i class="fas fa-bars"></i></a>
+  </div>
+
+  <nav id="gnb">
+   <div class="menu">
+    <a href="#">제품소개</a>
+    <a href="#">기능</a>
+    <a href="#">이벤트</a>
+    <a href="#">고객센터</a>
+   </div>
+   <div class="sub">
+    <div class="subMenu">
+     <ul>
+      <li><a href="#">Dobbi</a></li>
+     </ul>
+     <ul>
+      <li><a href="#">매뉴얼</a></li>
+      <li><a href="#">활용팁</a></li>
+     </ul>
+     <ul>
+      <li><a href="#">진행중 이벤트</a></li>
+      <li><a href="#">당첨자 발표</a></li>
+     </ul>
+     <ul>
+      <li><a href="#">QnA</a></li>
+      <li><a href="#">공지사항</a></li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+
+  <dl id="gnbHam">
+   <div class="logoHam">
+    <h1><a href="index.html">Dobbi</a></h1>
+   </div>
+   <dt><a href="product.html">제품소개</a></dt>
+   <dt><a href="#">기능</a></dt>
+   <dd><a href="#">매뉴얼</a></dd>
+   <dd><a href="#">활용팁</a></dd>
+   <dt><a href="#">이벤트</a></dt>
+   <dt><a href="qna.html">QnA</a></dt>
+
+  </dl>
+
+ </header>
+
+ <!-- main-->
+
+ <main>
+
+  <div id="cc">
+   <h2>고객상담실</h2>
+   <h5>Customer Center</h5>
+  </div>
+
+
+  <div id="boxSelect">
+  
+   <select name="FAQ" id="FAQ">
+    <option value="f1" class="faq2" selected>FAQ</option>
+    <option value="f2" class="csc2">고객서비스센터</option>
+   </select>
+   
+   
+   
+      <div id="faq">
+      <div class="frequency" class="f1">
+
+       <dl class="best5">
+        <dt>자주 묻는 질문 Best 5</dt>
+        <dt>야외나 자동차에서 이용할 수 있나요?</dt>
+        <dd>야외 이용을 원하는 경우, 핫스팟 이용에 대한 설정이 필요합니다.<br><strong>단,
+    핫스팟 이용시 가입하신 이동전화 요금제에 따라 데이터 이용료가 추가로 발생할 수 있습니다.</strong></dd>
+        <dt>업데이트 시작 후 갑자기 디바이스가 켜지지 않아요.</dt>
+        <dd>도비는 안드로이드 스마트폰과 같이 벽돌 현상이 발생될 수 있습니다.<br>이러한 경우는 매우 드물며, 현상이 발생될 경우 고객센터로 연락 주시면 조치하여 드리겠습니다.</dd>
+        <dt>앱에서 연결 가능한 디바이스를 찾지 못합니다.</dt>
+        <dd>도비 디바이스는 앱과의 연결 시에 Wi-Fi를 이용합니다.</dd>
+        <dt>디바이스 한 대에 여러 명이 연결해서 이용할 수 있나요?</dt>
+        <dd>도비 디바이스는 <strong>한 대에 하나의 아이디로만 연결할 수 있습니다.</strong> 다만, 연결된 디바이스는 여러 명이 함께 음성 명령으로 이용할 수 있습니다.</dd>
+        <dt>디바이스의 네트워크 연결이 끊어졌어요.</dt>
+        <dd>디바이스의 Wi-Fi 연결이 끊어지는 경우에는 여러 가지 원인이 있을 수 있습니다.</dd>
+       </dl>
+      </div>
+
+     </div>
+     
+          <div id="center" class="f2">
+      <article>
+       <h4>1:1 고객상담</h4>
+       <p>카운셀러가 제품 사용법부터 팁까지 <br> 상담해드립니다.
+       </p>
+       <a href="#">상담하기</a>
+      </article>
+      <article>
+       <h4>사이트 이용문의</h4>
+       <p>사이트 이용과 관련된 문의 사항을 <br>전달해주세요.</p>
+       <a href="#">상담하기</a>
+      </article>
+      <article>
+       <h4>나의 상담목록</h4>
+       <p>문의하신 내용을 <br>확인하실 수 있습니다. </p>
+       <a href="#">상담하기</a>
+      </article>
+
+      <div class="info">
+       <h4>
+        고객 상담실 안내
+       </h4>
+       <ol>
+        <li>상담전용 전화는 수신자 부담으로 운영되고 있으며, 주말 및 공휴일은 휴무입니다.</li>
+        <li>상담 접수는 24시간 가능하며, 접수된 상담은 상담 가능 시간에 답변 드리도록 하겠습니다.</li>
+       </ol>
+      </div>
+     </div>
+   
+   
+   
+  </div>
+
+
+  <div id="box">
+
+   <div id="inner_box1" class="box0">
+    <input type="radio" name="radio001" id="radiobtn1" checked>
+    <label for="radiobtn1">FAQ</label>
+    <div class="radioDiv">
+     <div id="faq">
+      <div class="frequency">
+
+       <dl class="best5">
+        <dt>자주 묻는 질문 Best 5</dt>
+        <dt>야외나 자동차에서 이용할 수 있나요?</dt>
+        <dd>야외 이용을 원하는 경우, 핫스팟 이용에 대한 설정이 필요합니다.<br><strong>단,
+    핫스팟 이용시 가입하신 이동전화 요금제에 따라 데이터 이용료가 추가로 발생할 수 있습니다.</strong></dd>
+        <dt>업데이트 시작 후 갑자기 디바이스가 켜지지 않아요.</dt>
+        <dd>도비는 안드로이드 스마트폰과 같이 벽돌 현상이 발생될 수 있습니다.<br>이러한 경우는 매우 드물며, 현상이 발생될 경우 고객센터로 연락 주시면 조치하여 드리겠습니다.</dd>
+        <dt>앱에서 연결 가능한 디바이스를 찾지 못합니다.</dt>
+        <dd>도비 디바이스는 앱과의 연결 시에 Wi-Fi를 이용합니다.</dd>
+        <dt>디바이스 한 대에 여러 명이 연결해서 이용할 수 있나요?</dt>
+        <dd>도비 디바이스는 <strong>한 대에 하나의 아이디로만 연결할 수 있습니다.</strong> 다만, 연결된 디바이스는 여러 명이 함께 음성 명령으로 이용할 수 있습니다.</dd>
+        <dt>디바이스의 네트워크 연결이 끊어졌어요.</dt>
+        <dd>디바이스의 Wi-Fi 연결이 끊어지는 경우에는 여러 가지 원인이 있을 수 있습니다.</dd>
+       </dl>
+      </div>
+
+     </div>
+    </div>
+   </div>
+
+
+   <div id="inner_box2" class="box0">
+    <input type="radio" name="radio001" id="radiobtn2"> <label for="radiobtn2">고객서비스센터</label>
+    <div class="radioDiv">
+     <div id="center">
+      <article>
+       <h4>1:1 고객상담</h4>
+       <p>카운셀러가 제품 사용법부터 팁까지 <br> 상담해드립니다.
+       </p>
+       <a href="#">상담하기</a>
+      </article>
+      <article>
+       <h4>사이트 이용문의</h4>
+       <p>사이트 이용과 관련된 문의 사항을 <br>전달해주세요.</p>
+       <a href="#">상담하기</a>
+      </article>
+      <article>
+       <h4>나의 상담목록</h4>
+       <p>문의하신 내용을 <br>확인하실 수 있습니다. </p>
+       <a href="#">상담하기</a>
+      </article>
+
+      <div class="info">
+       <h4>
+        고객 상담실 안내
+       </h4>
+       <ol>
+        <li>상담전용 전화는 수신자 부담으로 운영되고 있으며, 주말 및 공휴일은 휴무입니다.</li>
+        <li>상담 접수는 24시간 가능하며, 접수된 상담은 상담 가능 시간에 답변 드리도록 하겠습니다.</li>
+       </ol>
+      </div>
+     </div>
+    </div>
+   </div>
+
+  </div>
+
+<!--
+  <style>
+   #box {
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+
+    position: relative;
+   }
+
+   .box0 input {
+    display: none;
+   }
+
+   .box0 label {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: #333;
+   }
+
+   .box0 .radioDiv {
+    width: 100%;
+    height: 560px;
+    display: none;
+    position: absolute;
+    top: 70px;
+    background: #fff;
+   }
+
+   .box0 input:checked~div {
+    display: block;
+   }
+  </style>
+-->
+
+
+
+ </main>
+
+ <!-- footer-->
+
+ <footer><address>&copy;
+   2018 Dobbi All Right Reserved. </address></footer>
+
+ <span class="wrap"></span>
+
+</body>
+
+</html>
